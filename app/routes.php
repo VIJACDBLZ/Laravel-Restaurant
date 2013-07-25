@@ -10,8 +10,31 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
+/*Home Page Route*/
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('welcome');
 });
+//Contact Page
+Route::get('/contact', function()
+{
+	return View::make('contact');
+});
+
+Route::get('/restaurant/{id}', 'RestaurantController@showRestaurant');
+
+
+
+
+
+
+
+//AJAX REQUESTS
+
+//Restaurant Location POST
+
+Route::post('/restaurants-location', function() {
+	$Restaurant = Restaurant::all();
+    return Response::json($Restaurant);
+});
+
