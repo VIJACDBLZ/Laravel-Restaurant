@@ -1,6 +1,6 @@
-jQuery(document).ready(function(){
-	
-	//This script is added for basic map-view
-	
+jQuery(document).ready(function () {
+
+    //This script is added for basic map-view
+
 
 });

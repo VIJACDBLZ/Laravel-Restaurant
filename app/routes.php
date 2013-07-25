@@ -11,30 +11,23 @@
 |
 */
 /*Home Page Route*/
-Route::get('/', function()
-{
-	return View::make('welcome');
+Route::get('/', function () {
+    return View::make('welcome');
 });
 //Contact Page
-Route::get('/contact', function()
-{
-	return View::make('contact');
+Route::get('/contact', function () {
+    return View::make('contact');
 });
 
 Route::get('/restaurant/{id}', 'RestaurantController@showRestaurant');
-
-
-
-
-
 
 
 //AJAX REQUESTS
 
 //Restaurant Location POST
 
-Route::post('/restaurants-location', function() {
-	$Restaurant = Restaurant::all();
+Route::post('/restaurants-location', function () {
+    $Restaurant = Restaurant::all();
     return Response::json($Restaurant);
 });
 

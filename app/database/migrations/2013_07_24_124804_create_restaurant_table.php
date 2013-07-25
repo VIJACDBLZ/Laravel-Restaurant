@@ -3,7 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateRestaurantTable extends Migration {
+class CreateRestaurantTable extends Migration
+{
 
     /**
      * Run the migrations.
@@ -12,7 +13,7 @@ class CreateRestaurantTable extends Migration {
      */
     public function up()
     {
-        Schema::create('restaurant', function(Blueprint $table) {
+        Schema::create('restaurant', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->float('lat');

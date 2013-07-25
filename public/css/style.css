@@ -1,27 +1,30 @@
-body{
-	margin: 0;
-	padding: 0;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.navbar-inner{
-	opacity: .85;
+.navbar-inner {
+    opacity: .85;
 }
-#side-bar{
-	position:absolute;
-	top:670px;
-	left:50%;
-	
-	background-color: #e3e3e3;
-	}
 
-#map-view{
-	margin: 0;
+#side-bar {
+    position: absolute;
+    top: 670px;
+    left: 50%;
+
+    background-color: #e3e3e3;
 }
-#map-canvas img{max-width:none}
+
+#map-view {
+    margin: 0;
+}
+
+#map-canvas img {
+    max-width: none
+}
 
 img[src*="iws3.png"] {
     display: none;
 }
-
 
 /*Scroll Bar*/

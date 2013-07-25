@@ -1,4 +1,4 @@
 @extends ('layout.master')
 @section ('content')
-	Contact page comes here
+Contact page comes here
 @stop
