@@ -22,8 +22,7 @@ function load() {
             var point = new google.maps.LatLng(
                 parseFloat(restaurants[i].lat),
                 parseFloat(restaurants[i].lng));
-            var html = "<b>" + name + "</b> <br/>" + address + "<br/>" + "<a href='" + website + "'>" + website + "</a>";
-            ;
+            var html = "<b>" + name + "</b> <br/>" + address + "<br/>" + /*"<a href='" + website + "'>" + website + "</a>" + */"<a href='" + 'restaurant/'+(i+1)+ "'>" + name + "</a>";
             var icon = 'img/pin5.png';
             var marker = new google.maps.Marker({
                 title: restaurants[i].name,

@@ -42,8 +42,9 @@ class RestaurantController extends BaseController
      */
     public function showRestaurant($id)
     {
-        $Restaurant = Restaurant::find($id);
-        return View::make('restaurant.profile', array('Restaurant' => $Restaurant));
+        $Restaurant = Restaurant::where('id',$id)->first();
+
+        return View::make('restaurant', array('Restaurant' => $Restaurant));
 
     }
 

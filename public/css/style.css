@@ -5,6 +5,12 @@ body {
 
 .navbar-inner {
     opacity: .85;
+
+}
+.navbar{
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 #side-bar {
@@ -26,5 +32,25 @@ body {
 img[src*="iws3.png"] {
     display: none;
 }
+.container-fluid{
+    margin: 60px 20px 0 20px;
+}
+
+.course-nav{
+    width: 300px;
+}
 
 /*Scroll Bar*/
+.form-signin {
+    max-width: 350px;
+    padding: 45px 80px 55px;
+    margin: 60px auto 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}

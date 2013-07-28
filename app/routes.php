@@ -22,6 +22,19 @@ Route::get('/contact', function () {
 Route::get('/restaurant/{id}', 'RestaurantController@showRestaurant');
 
 
+
+//USER ROUTES
+
+Route::get('/login', function(){
+    return View::make('login');
+});
+
+//ADMIN
+
+Route::get('/admin', function(){
+    return View::make('admin.admin');
+});
+
 //AJAX REQUESTS
 
 //Restaurant Location POST
